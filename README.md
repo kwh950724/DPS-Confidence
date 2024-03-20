@@ -58,10 +58,10 @@ datasets
 ### Reproducing Experimental Results
 You can easily reproduce the experimental results of $\mathrm{Ours}$, $\mathrm{LAF^{*\dagger}}$, and $\mathrm{LAF^{\dagger}}$ with $\mathrm{PSMNet}$.<br/>
 
-First, to evaluate confidence maps obtained from the proposed method ($Ours$), run:
+First, to evaluate confidence maps obtained from the proposed method ($\mathrm{Ours}$), run:
 ```shell
 python main.py --dataset_type ["kitti2012" or "kitti2015" or "mid2014"] \
-               --dataset_dir [directory path of the target dataset]
+               --dataset_dir [dataset directory path]
 ```
 
 ## References
