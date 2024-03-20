@@ -15,9 +15,13 @@ If you use this implementation for your research, please cite the following pape
 }
 ```
 
-## 
+## Setup
+### Datasets
 ```shell
-python main.py
+datasets
+└ kitti-stereo-2012
+└ kitti-stereo-2015
+└ middlebury-2014
 ```
 
 ## References
