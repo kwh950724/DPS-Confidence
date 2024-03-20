@@ -34,7 +34,9 @@ $ docker pull kwh950724/pytorch:aaai24
 ### Datasets
 For KITTI Stereo 2012 & 2015 datasets, only training datasets, which provide ground-truth disparity maps, are used.
 Also, only data with filename ending in "_10" were used (e.g., 000000_10.png).<br/>
+
 In case of Middlebury 2014 dataset, we used training dataset with quarter resolution.<br/>
+
 Dataset directory structure should be as follows:
 ```shell
 datasets
@@ -55,6 +57,7 @@ datasets
 
 ### Reproducing Experimental Results
 You can easily reproduce the experimental results of $\mathrm{Ours}$, $\mathrm{LAF^{*\dagger}}$, and $\mathrm{LAF^{\dagger}}$ with $\mathrm{PSMNet}$.<br/>
+
 First, to evaluate confidence maps obtained from the proposed method ($Ours$), run:
 ```shell
 python main.py --dataset_type ["kitti2012" or "kitti2015" or "mid2014"] \
