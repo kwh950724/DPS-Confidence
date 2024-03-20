@@ -26,18 +26,18 @@ cuda==
 ### Datasets
 ```shell
 datasets
-├ kitti-stereo-2012
-| ├ colored_0
-| ├ colored_1
-| └ disp_occ
-├ kitti-stereo-2015
-| ├ image_2
-| ├ image_3
-| └ disp_occ_0
+└ kitti-stereo-2012
+  └ colored_0
+  └ colored_1
+  └ disp_occ
+└ kitti-stereo-2015
+  └ image_2
+  └ image_3
+  └ disp_occ_0
 └ middlebury-2014
-  ├ im0
-  ├ im1
-  ├ disp0GT
+  └ im0
+  └ im1
+  └ disp0GT
   └ mask0nocc
 ```
 
