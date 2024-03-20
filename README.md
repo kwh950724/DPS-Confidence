@@ -25,8 +25,8 @@ cuda==
 ```
 ### Datasets
 For KITTI Stereo 2012 & 2015 datasets, only training datasets, which provide ground-truth disparity maps, are used.
-Also, only data with filename ending in "_10" were used. (e.g., 000000_10.png)
-In case of Middlebury 2014 dataset, we used training dataset with quarter resolution.
+Also, only data with filename ending in "_10" were used. (e.g., 000000_10.png)<br/>
+In case of Middlebury 2014 dataset, we used training dataset with quarter resolution.<br/>
 The dataset directory structure should be as follows:
 ```shell
 datasets
