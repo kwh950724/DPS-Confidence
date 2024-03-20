@@ -63,6 +63,11 @@ First, to evaluate confidence maps obtained from the proposed method ($\mathrm{O
 python main.py --dataset_type ["kitti2012" or "kitti2015" or "mid2014"] \
                --dataset_dir [dataset directory path]
 ```
+Then, you can train $\mathrm{LAF^{*\dagger}}$ and $\mathrm{LAF^{\dagger}}$ using predicted disparity maps, confidence maps, and matching cost through the above process as follows:
+```shell
+python LAFNet/train.py --modal_type conf
+python LAFNet/train.py --modal_type conf --use_cost
+```
 
 ## References
 [1] Chang and Chen, "Pyramid Stereo Matching Network", CVPR, 2018. [[GitHub]](https://github.com/JiaRenChang/PSMNet?tab=readme-ov-file)<br/>
