@@ -25,8 +25,12 @@ cuda==10.2
 numpy==1.21.2
 opencv-python==4.8.0
 scipy==1.9.1
-
 ```
+You can simply set up the experimental environment by pulling the provided docker image.
+```shell
+$ docker pull kwh950724/pytorch:aaai24
+```
+
 ### Datasets
 For KITTI Stereo 2012 & 2015 datasets, only training datasets, which provide ground-truth disparity maps, are used.
 Also, only data with filename ending in "_10" were used (e.g., 000000_10.png).<br/>
