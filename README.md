@@ -53,6 +53,9 @@ datasets
        └ mask0nocc
 ```
 
+### Reproducing Results
+You can easily reproduce the results of Ours, LAF-Net$^{*\dagger}$, and LAF-Net
+
 ## References
 [1] Chang and Chen, "Pyramid Stereo Matching Network", CVPR, 2018. [[GitHub]](https://github.com/JiaRenChang/PSMNet?tab=readme-ov-file)<br/>
 [2] Kim et al., "LAF-Net: Locally Adaptive Fusion Networks for Stereo Confidence Estimation", CVPR, 2019. [[GitHub]](https://github.com/seungryong/LAF)
