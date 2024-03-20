@@ -54,7 +54,7 @@ datasets
 ```
 
 ### Reproducing Results
-You can easily reproduce the results of Ours, LAF-Net$^{*\dagger}$, and LAF-Net
+You can easily reproduce the results of Ours, LAF-Net $^{*\dagger}$ , and LAF-Net
 
 ## References
 [1] Chang and Chen, "Pyramid Stereo Matching Network", CVPR, 2018. [[GitHub]](https://github.com/JiaRenChang/PSMNet?tab=readme-ov-file)<br/>
