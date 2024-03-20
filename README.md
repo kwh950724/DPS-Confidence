@@ -17,17 +17,21 @@ If you use this implementation for your research, please cite the following pape
 
 ## Setup
 ### Requirements
+Experimental environment is as follows:
 ```shell
-python==
-torch==
-cuda==
+python==3.8.12
+torch==1.12.0
+cuda==10.2
+numpy==1.21.2
+opencv-python==4.8.0
+scipy==1.9.1
 
 ```
 ### Datasets
 For KITTI Stereo 2012 & 2015 datasets, only training datasets, which provide ground-truth disparity maps, are used.
-Also, only data with filename ending in "_10" were used. (e.g., 000000_10.png)<br/>
+Also, only data with filename ending in "_10" were used (e.g., 000000_10.png).<br/>
 In case of Middlebury 2014 dataset, we used training dataset with quarter resolution.<br/>
-The dataset directory structure should be as follows:
+Dataset directory structure should be as follows:
 ```shell
 datasets
    ├ kitti-stereo-2012
