@@ -1,5 +1,4 @@
 # DPS-Confidence
-
 Official PyTorch implementation of "Modeling Stereo-Confidence Out of the End-to-End Stereo-Matching Network via Disparity Plane Sweep", Jae Young Lee*, Woonghyun Ka*, Jaehyun Choi, and Junmo Kim (* equal contribution, alphabetical order), AAAI 2024. [[arXiv]](https://arxiv.org/abs/2401.12001)
 
 ## Citation
@@ -66,8 +65,17 @@ python main.py --dataset_type ["kitti2012" or "kitti2015" or "mid2014"] \
 Then, you can train $\mathrm{LAF^{*\dagger}}$ and $\mathrm{LAF^{\dagger}}$ using predicted disparity maps, confidence maps, and matching cost through the above process as follows:
 ```shell
 python LAFNet/train.py --modal_type conf
-python LAFNet/train.py --modal_type conf --use_cost
+                       --use_cost (optional)
 ```
+To evaluate the trained model, run:
+```shell
+python LAFNet/evaluate.py --dataset_type ["kitti2012" or "kitti2015" or "mid2014"] \
+                          --dataset_dir [dataset directory path] \
+                          --weights_path [weight file (.pth) path] \
+                          --modal_type conf
+                          --use_cost (optional)
+```
+Pre-trained weights for $\mathrm{LAF^{*\dagger}}$ and $\mathrm{LAF^{\dagger}}$ can be found in `LAFNet/pretrained`.
 
 ## References
 [1] Chang and Chen, "Pyramid Stereo Matching Network", CVPR, 2018. [[GitHub]](https://github.com/JiaRenChang/PSMNet?tab=readme-ov-file)<br/>
