@@ -14,6 +14,10 @@ If you use this implementation for your research, please cite the following pape
 }
 ```
 
+## References
+[1] Chang and Chen, "Pyramid Stereo Matching Network", CVPR, 2018. [[GitHub]](https://github.com/JiaRenChang/PSMNet?tab=readme-ov-file)<br/>
+[2] Kim et al., "LAF-Net: Locally Adaptive Fusion Networks for Stereo Confidence Estimation", CVPR, 2019. [[GitHub]](https://github.com/seungryong/LAF)
+
 ## Setup
 ### Requirements
 Experimental environment is as follows:
@@ -76,7 +80,3 @@ python LAFNet/evaluate.py --dataset_type ["kitti2012" or "kitti2015" or "mid2014
                           --use_cost (optional)
 ```
 Pre-trained weights for $\mathrm{LAF^{*\dagger}}$ and $\mathrm{LAF^{\dagger}}$ can be found in `LAFNet/pretrained`.
-
-## References
-[1] Chang and Chen, "Pyramid Stereo Matching Network", CVPR, 2018. [[GitHub]](https://github.com/JiaRenChang/PSMNet?tab=readme-ov-file)<br/>
-[2] Kim et al., "LAF-Net: Locally Adaptive Fusion Networks for Stereo Confidence Estimation", CVPR, 2019. [[GitHub]](https://github.com/seungryong/LAF)
