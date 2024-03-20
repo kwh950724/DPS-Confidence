@@ -53,8 +53,13 @@ datasets
        └ mask0nocc
 ```
 
-### Reproducing Results
-You can easily reproduce the results of $\mathrm{Ours}$, $\mathrm{LAF-Net^{*\dagger}}$, and $\mathrm{LAF-Net^{\dagger}}$ with $\mathrm{PSMNet}$. 
+### Reproducing Experimental Results
+You can easily reproduce the experimental results of $\mathrm{Ours}$, $\mathrm{LAF^{*\dagger}}$, and $\mathrm{LAF^{\dagger}}$ with $\mathrm{PSMNet}$.<br/>
+First, to evaluate confidence maps obtained from the proposed method ($Ours$), run:
+```shell
+python main.py --dataset_type ["kitti2012" or "kitti2015" or "mid2014"] \
+               --dataset_dir [directory path of the target dataset]
+```
 
 ## References
 [1] Chang and Chen, "Pyramid Stereo Matching Network", CVPR, 2018. [[GitHub]](https://github.com/JiaRenChang/PSMNet?tab=readme-ov-file)<br/>
